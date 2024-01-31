@@ -1,0 +1,71 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#000000",
+          "900_7f": "#0000007f",
+          "900_70": "#00000070",
+          "900_0c": "#0000000c",
+          "900_99": "#00000099",
+          "900_33": "#00000033",
+          "900_19": "#00000019",
+        },
+        gray: {
+          50: "#f3f9fd",
+          600: "#808080",
+          700: "#696969",
+          "50_01": "#f6fbff",
+          "50_7f": "#f3f9fe7f",
+          "50_19": "#f3f9fe19",
+        },
+        teal: { 500: "#069b80", "400_87": "#2a9dc187" },
+        light_green: { 600: "#88c12a", A700: "#63df18", "600_42": "#88c12a42" },
+        blue: {
+          500: "#109bff",
+          "500_87": "#119bff87",
+          "500_7f": "#109bff7f",
+          "500_b2": "#109bffb2",
+          "500_33": "#109bff33",
+          "500_19": "#109bff19",
+        },
+        white: {
+          A700_cc: "#ffffffcc",
+          A700_4c: "#ffffff4c",
+          A700_87: "#ffffff87",
+          A700: "#ffffff",
+        },
+        blue_gray: { 100: "#d9d9d9", 900: "#2b2b2b" },
+        pink: { 400: "#cd3b81" },
+        purple: { 300: "#ba58ca" },
+        cyan: { 300: "#55d4cd", 400: "#1ee0e0", 900: "#174762" },
+      },
+      boxShadow: {
+        bs3: "0px 2px  10px 0px #0000000c",
+        bs: "0px 4px  4px 0px #00000033",
+        bs2: "0px 2px  10px 0px #00000019",
+        bs1: "0px 2px  30px 0px #00000019",
+      },
+      fontFamily: {
+        poppins: "Poppins",
+        roboto: "Roboto",
+        prociono: "Prociono",
+      },
+      backgroundImage: {
+        gradient: "linear-gradient(180deg ,#119bff87,#ffffff87)",
+        gradient1: "linear-gradient(180deg ,#2a9dc187,#ffffff87)",
+        gradient2: "linear-gradient(180deg ,#88c12a42,#88c12a)",
+        gradient3: "linear-gradient(180deg ,#ffffff,#1ee0e0)",
+        gradient4: "linear-gradient(180deg ,#63df18,#55d4cd)",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};
